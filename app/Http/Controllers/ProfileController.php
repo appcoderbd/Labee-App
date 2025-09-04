@@ -57,4 +57,20 @@ class ProfileController extends Controller
 
         return Redirect::to('/');
     }
+
+    // User Profile
+    public function user_profile(Request $request): View{
+
+        return view('profile.user-profile');
+    }
+
+
+
+    public function edit_profile(Request $request): View{
+
+        return view('profile.edit-user');
+    }
+
+
+
 }

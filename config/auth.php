@@ -40,6 +40,11 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'api' => [
+        'driver' => 'sanctum', // বা 'token' যদি Passport/Personal Access Token ব্যবহার করো
+        'provider' => 'users',
+        'hash' => false, // token hash করতে চাইলে true
+        ],
     ],
 
     /*
